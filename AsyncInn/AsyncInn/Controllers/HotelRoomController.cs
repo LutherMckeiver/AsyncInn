@@ -7,19 +7,13 @@ using System.Threading.Tasks;
 
 namespace AsyncInn.Controllers
 {
-    public class HomeController : Controller
+    public class HotelRoomController : Controller
     {
-
         private readonly AsyncInnDbContext _context;
 
-        public HomeController(AsyncInnDbContext context)
+        public HotelRoomController(AsyncInnDbContext context)
         {
             _context = context;
-        }
-
-        public IActionResult Index()
-        {
-            return View();
         }
     }
 }
