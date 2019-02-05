@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.2.1/cyborg/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-e4EhcNy
+          UDF/kj6ZoPkLnURgmd8KW1B4z9GHYKb7eTG3w3uN8di6EBsN2wrEYr8Gc" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/stylesheet.css" />
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <header>
+        <h1>Async Inn</h1>
+    </header>
+    <nav>
+        <a asp-action="../Home/Index">Home</a>
+        <a asp-action="../Room/Index">Room</a>
+        <a asp-action="../Amenities/Index">Amenities</a>
+        <a asp-action="../Hotel/Index">Hotel</a>
+        <a asp-action="../HotelRoom/Index">HotelRoom</a>
+    </nav>
+    <div>
+        @RenderBody()
+        @RenderSection("scripts", required: false)
+    </div>
+</body>
+</html>
+
+
